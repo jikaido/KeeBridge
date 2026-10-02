@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BAD9EF6306E8AA7003720EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAD9EF5306E8AA7003720EF /* AppDelegate.swift */; };
+		4BAD9F02306E8AA7003720EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAD9F01306E8AA7003720EF /* ViewController.swift */; };
+		4BAD9F05306E8AA7003720EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAD9F03306E8AA7003720EF /* Main.storyboard */; };
+		4BAD9F07306E8AA7003720EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BAD9F06306E8AA7003720EF /* Assets.xcassets */; };
+		4BAD9F0E306E8AA8003720EF /* KeeBridge Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4BAD9F0D306E8AA8003720EF /* KeeBridge Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4BAD9F13306E8AA8003720EF /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAD9F12306E8AA8003720EF /* SafariWebExtensionHandler.swift */; };
+		4BAD9F2D306E8AA8003720EF /* background in Resources */ = {isa = PBXBuildFile; fileRef = 4BAD9F1F306E8AA8003720EF /* background */; };
+		4BAD9F2F306E8AA8003720EF /* options in Resources */ = {isa = PBXBuildFile; fileRef = 4BAD9F21306E8AA8003720EF /* options */; };
+		4BAD9F30306E8AA8003720EF /* bootstrap in Resources */ = {isa = PBXBuildFile; fileRef = 4BAD9F22306E8AA8003720EF /* bootstrap */; };
+		4BAD9F31306E8AA8003720EF /* css in Resources */ = {isa = PBXBuildFile; fileRef = 4BAD9F23306E8AA8003720EF /* css */; };
+		4BAD9F32306E8AA8003720EF /* content in Resources */ = {isa = PBXBuildFile; fileRef = 4BAD9F24306E8AA8003720EF /* content */; };
+		4BAD9F34306E8AA8003720EF /* common in Resources */ = {isa = PBXBuildFile; fileRef = 4BAD9F26306E8AA8003720EF /* common */; };
+		4BAD9F35306E8AA8003720EF /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 4BAD9F27306E8AA8003720EF /* COPYING */; };
+		4BAD9F36306E8AA8003720EF /* popups in Resources */ = {isa = PBXBuildFile; fileRef = 4BAD9F28306E8AA8003720EF /* popups */; };
+		4BAD9F37306E8AA8003720EF /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 4BAD9F29306E8AA8003720EF /* icons */; };
+		4BAD9F38306E8AA8003720EF /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BAD9F2A306E8AA8003720EF /* manifest.json */; };
+		4BAD9F39306E8AA8003720EF /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 4BAD9F2B306E8AA8003720EF /* _locales */; };
+		4BAD9F3A306E8AA8003720EF /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 4BAD9F2C306E8AA8003720EF /* fonts */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BAD9F0F306E8AA8003720EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BAD9EEA306E8AA7003720EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BAD9F0C306E8AA8003720EF;
+			remoteInfo = "KeeBridge Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4BAD9F1A306E8AA8003720EF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				4BAD9F0E306E8AA8003720EF /* KeeBridge Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4BAD9EF2306E8AA7003720EF /* KeeBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeeBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BAD9EF5306E8AA7003720EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4BAD9F01306E8AA7003720EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4BAD9F04306E8AA7003720EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BAD9F06306E8AA7003720EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BAD9F08306E8AA7003720EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BAD9F0D306E8AA8003720EF /* KeeBridge Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "KeeBridge Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BAD9F12306E8AA8003720EF /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		4BAD9F14306E8AA8003720EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BAD9F1F306E8AA8003720EF /* background */ = {isa = PBXFileReference; lastKnownFileType = folder; name = background; path = Resources/background; sourceTree = "<group>"; };
+		4BAD9F21306E8AA8003720EF /* options */ = {isa = PBXFileReference; lastKnownFileType = folder; name = options; path = Resources/options; sourceTree = "<group>"; };
+		4BAD9F22306E8AA8003720EF /* bootstrap */ = {isa = PBXFileReference; lastKnownFileType = folder; name = bootstrap; path = Resources/bootstrap; sourceTree = "<group>"; };
+		4BAD9F23306E8AA8003720EF /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; name = css; path = Resources/css; sourceTree = "<group>"; };
+		4BAD9F24306E8AA8003720EF /* content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = content; path = Resources/content; sourceTree = "<group>"; };
+		4BAD9F26306E8AA8003720EF /* common */ = {isa = PBXFileReference; lastKnownFileType = folder; name = common; path = Resources/common; sourceTree = "<group>"; };
+		4BAD9F27306E8AA8003720EF /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; name = COPYING; path = Resources/COPYING; sourceTree = "<group>"; };
+		4BAD9F28306E8AA8003720EF /* popups */ = {isa = PBXFileReference; lastKnownFileType = folder; name = popups; path = Resources/popups; sourceTree = "<group>"; };
+		4BAD9F29306E8AA8003720EF /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
+		4BAD9F2A306E8AA8003720EF /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		4BAD9F2B306E8AA8003720EF /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = Resources/_locales; sourceTree = "<group>"; };
+		4BAD9F2C306E8AA8003720EF /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = Resources/fonts; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BAD9EEF306E8AA7003720EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		4BAD9F0A306E8AA8003720EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BAD9EE9306E8AA7003720EF = {
+			isa = PBXGroup;
+			children = (
+				4BAD9EF4306E8AA7003720EF /* KeeBridge */,
+				4BAD9F11306E8AA8003720EF /* KeeBridge Extension */,
+				4BAD9EF3306E8AA7003720EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BAD9EF3306E8AA7003720EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BAD9EF2306E8AA7003720EF /* KeeBridge.app */,
+				4BAD9F0D306E8AA8003720EF /* KeeBridge Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BAD9EF4306E8AA7003720EF /* KeeBridge */ = {
+			isa = PBXGroup;
+			children = (
+				4BAD9EF5306E8AA7003720EF /* AppDelegate.swift */,
+				4BAD9F01306E8AA7003720EF /* ViewController.swift */,
+				4BAD9F03306E8AA7003720EF /* Main.storyboard */,
+				4BAD9F06306E8AA7003720EF /* Assets.xcassets */,
+				4BAD9F08306E8AA7003720EF /* Info.plist */,
+			);
+			path = KeeBridge;
+			sourceTree = "<group>";
+		};
+		4BAD9F11306E8AA8003720EF /* KeeBridge Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4BAD9F1E306E8AA8003720EF /* Resources */,
+				4BAD9F12306E8AA8003720EF /* SafariWebExtensionHandler.swift */,
+				4BAD9F14306E8AA8003720EF /* Info.plist */,
+			);
+			path = "KeeBridge Extension";
+			sourceTree = "<group>";
+		};
+		4BAD9F1E306E8AA8003720EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4BAD9F1F306E8AA8003720EF /* background */,
+				4BAD9F21306E8AA8003720EF /* options */,
+				4BAD9F22306E8AA8003720EF /* bootstrap */,
+				4BAD9F23306E8AA8003720EF /* css */,
+				4BAD9F24306E8AA8003720EF /* content */,
+				4BAD9F26306E8AA8003720EF /* common */,
+				4BAD9F27306E8AA8003720EF /* COPYING */,
+				4BAD9F28306E8AA8003720EF /* popups */,
+				4BAD9F29306E8AA8003720EF /* icons */,
+				4BAD9F2A306E8AA8003720EF /* manifest.json */,
+				4BAD9F2B306E8AA8003720EF /* _locales */,
+				4BAD9F2C306E8AA8003720EF /* fonts */,
+			);
+			name = Resources;
+			path = "KeeBridge Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BAD9EF1306E8AA7003720EF /* KeeBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BAD9F1B306E8AA8003720EF /* Build configuration list for PBXNativeTarget "KeeBridge" */;
+			buildPhases = (
+				4BAD9EEE306E8AA7003720EF /* Sources */,
+				4BAD9EEF306E8AA7003720EF /* Frameworks */,
+				4BAD9EF0306E8AA7003720EF /* Resources */,
+				4BAD9F1A306E8AA8003720EF /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BAD9F10306E8AA8003720EF /* PBXTargetDependency */,
+			);
+			name = KeeBridge;
+			productName = KeeBridge;
+			productReference = 4BAD9EF2306E8AA7003720EF /* KeeBridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4BAD9F0C306E8AA8003720EF /* KeeBridge Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BAD9F17306E8AA8003720EF /* Build configuration list for PBXNativeTarget "KeeBridge Extension" */;
+			buildPhases = (
+				4BAD9F09306E8AA8003720EF /* Sources */,
+				4BAD9F0A306E8AA8003720EF /* Frameworks */,
+				4BAD9F0B306E8AA8003720EF /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "KeeBridge Extension";
+			productName = "KeeBridge Extension";
+			productReference = 4BAD9F0D306E8AA8003720EF /* KeeBridge Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BAD9EEA306E8AA7003720EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					4BAD9EF1306E8AA7003720EF = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					4BAD9F0C306E8AA8003720EF = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = 4BAD9EED306E8AA7003720EF /* Build configuration list for PBXProject "KeeBridge" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BAD9EE9306E8AA7003720EF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4BAD9EF3306E8AA7003720EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BAD9EF1306E8AA7003720EF /* KeeBridge */,
+				4BAD9F0C306E8AA8003720EF /* KeeBridge Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BAD9EF0306E8AA7003720EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				4BAD9F05306E8AA7003720EF /* Main.storyboard in Resources */,
+				4BAD9F07306E8AA7003720EF /* Assets.xcassets in Resources */,
+			);
+		};
+		4BAD9F0B306E8AA8003720EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				4BAD9F37306E8AA8003720EF /* icons in Resources */,
+				4BAD9F35306E8AA8003720EF /* COPYING in Resources */,
+				4BAD9F32306E8AA8003720EF /* content in Resources */,
+				4BAD9F3A306E8AA8003720EF /* fonts in Resources */,
+				4BAD9F31306E8AA8003720EF /* css in Resources */,
+				4BAD9F38306E8AA8003720EF /* manifest.json in Resources */,
+				4BAD9F2F306E8AA8003720EF /* options in Resources */,
+				4BAD9F36306E8AA8003720EF /* popups in Resources */,
+				4BAD9F2D306E8AA8003720EF /* background in Resources */,
+				4BAD9F30306E8AA8003720EF /* bootstrap in Resources */,
+				4BAD9F39306E8AA8003720EF /* _locales in Resources */,
+				4BAD9F34306E8AA8003720EF /* common in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BAD9EEE306E8AA7003720EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				4BAD9F02306E8AA7003720EF /* ViewController.swift in Sources */,
+				4BAD9EF6306E8AA7003720EF /* AppDelegate.swift in Sources */,
+			);
+		};
+		4BAD9F09306E8AA8003720EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				4BAD9F13306E8AA8003720EF /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BAD9F10306E8AA8003720EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BAD9F0C306E8AA8003720EF /* KeeBridge Extension */;
+			targetProxy = 4BAD9F0F306E8AA8003720EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4BAD9F03306E8AA7003720EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BAD9F04306E8AA7003720EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BAD9F15306E8AA8003720EF /* Debug configuration for PBXProject "KeeBridge" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4BAD9F16306E8AA8003720EF /* Release configuration for PBXProject "KeeBridge" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		4BAD9F18306E8AA8003720EF /* Debug configuration for PBXNativeTarget "KeeBridge Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KeeBridge Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "KeeBridge Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jikaido.keebridge.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4BAD9F19306E8AA8003720EF /* Release configuration for PBXNativeTarget "KeeBridge Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KeeBridge Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "KeeBridge Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jikaido.keebridge.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4BAD9F1C306E8AA8003720EF /* Debug configuration for PBXNativeTarget "KeeBridge" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KeeBridge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KeeBridge;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jikaido.keebridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = NO;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4BAD9F1D306E8AA8003720EF /* Release configuration for PBXNativeTarget "KeeBridge" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KeeBridge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KeeBridge;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jikaido.keebridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = NO;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BAD9EED306E8AA7003720EF /* Build configuration list for PBXProject "KeeBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BAD9F15306E8AA8003720EF /* Debug configuration for PBXProject "KeeBridge" */,
+				4BAD9F16306E8AA8003720EF /* Release configuration for PBXProject "KeeBridge" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		4BAD9F17306E8AA8003720EF /* Build configuration list for PBXNativeTarget "KeeBridge Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BAD9F18306E8AA8003720EF /* Debug configuration for PBXNativeTarget "KeeBridge Extension" */,
+				4BAD9F19306E8AA8003720EF /* Release configuration for PBXNativeTarget "KeeBridge Extension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		4BAD9F1B306E8AA8003720EF /* Build configuration list for PBXNativeTarget "KeeBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BAD9F1C306E8AA8003720EF /* Debug configuration for PBXNativeTarget "KeeBridge" */,
+				4BAD9F1D306E8AA8003720EF /* Release configuration for PBXNativeTarget "KeeBridge" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BAD9EEA306E8AA7003720EF /* Project object */;
+	validationLevel = 1;
+}
