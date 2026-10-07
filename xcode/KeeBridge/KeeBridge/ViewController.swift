@@ -1,7 +1,6 @@
 // KeeBridge, Safari bridge for KeePassXC. Copyright (C) 2026 jikaido. GPL-3.0-or-later. See COPYING.
 
 import Cocoa
-import SafariServices
 import ServiceManagement
 
 class ViewController: NSViewController {
